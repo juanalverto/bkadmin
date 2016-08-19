@@ -24,3 +24,4 @@ class ProductViewSet(viewsets.ModelViewSet):
 	model = Product
 	queryset = Product.objects.all()
 	serializer_class = ProductSerializer
+	filter_fields = ['sku']
